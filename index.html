@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="assets/jquery/skdslider-master/skdslider-master/src/skdslider.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="assets/jquery/jQuery-Plugin-For-Smooth-One-Page-Scroller-Plugin-Smooth-Scroller/src/smooth-scroller.js"></script>
+    <link href="assets/jquery/skdslider-master/skdslider-master/src/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#demo1').skdslider({
+          slideSelector: '.slide',
+          delay:5000,
+          animationSpeed:2000,
+          showNextPrev:true,
+          showPlayButton:true,
+          autoSlide:true,
+          animationType:'fading'
+        });
+
+        jQuery('#demo2').skdslider({
+          slideSelector: '.slide',
+          delay:5000, 
+          animationSpeed: 1000,
+          showNextPrev:true,
+          showPlayButton:false,
+          autoSlide:true,
+          animationType:'sliding'
+        });
+    });
+</script>
+<script>
+  $(".demo").smoothScroller({
+  duration: 1000, // scrolling duration
+  activeClass: "active" // the CSS class for the anchor links to indicate the current section
+});
+</script>
+<script src="assets/js/helper.js"></script>
+<script src="assets/js/external.js"></script>
+<style type="text/css">
+  body { margin:0; padding:0;}
+  .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
+  .option-table td{ border-bottom:1px solid #eeeeee;}
+</style>
+   </head>
+<body>
+    <div class="allcontainer">
+       <section id="mainavi">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" id="cname" href="#">MAVEN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link demo" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link demo" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link demo" href="#team">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">PortFolio</a>
+                    <a class="dropdown-item" href="#">Testimonials</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"></a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#"></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Submit</button>
+              </form>
+            </div>
+          </nav>
+       </section>
+       <section id="banner">
+          <div id="demo1">
+          <div class="slide">
+            <img src="assets/images/banner1.jpg" />
+            <!--Slider Description example-->
+             <div class="slide-desc">
+                <h2>Become Strong With Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quidem corporis magni, eius nam ut <a class="more" href="#">more</a></p>
+            </div>
+         </div>
+        <div class="slide">
+           <img src="assets/images/banner2.jpg" />
+           <div class="slide-desc">
+            <h2>Great Buisness Strategies </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab alias nisi vitae incidunt sapiente, dicta <a class="more" href="#">more</a></p>
+          </div>
+       </div>
+       <div class="slide">
+          <img src="assets/images/banner3.jpg" />
+          <div class="slide-desc">
+            <h2>We Value Your Money </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, temporibus. Temporibus assumenda illum <a class="more" href="#">more</a></p>
+           </div>
+       </div>
+       <div class="slide">
+         <img src="assets/images/banner4.jpg" />
+         <div class="slide-desc">
+          <h2>Build Your Buisness Worth </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, temporibus. Temporibus assumenda illum <a class="more" href="#">more</a></p>
+         </div>
+      </div>
+          </div>
+       </section>
+       <section id="about">
+        <div class="container">
+          <h2 class="thead">About Us</h2>
+         <div class="abswrapper">
+          <div class="col-md-4 abh">
+            <h3>Creative Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos repellendus minima facilis libero sunt ab ipsum sed, expedita corporis et ea atque commodi. Aperiam explicabo cupiditate quae dolorem nesciunt?</p>
+          </div>
+          <div class="col-md-4 abh">
+            <h3>Branding And Identity</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos repellendus minima facilis libero sunt ab ipsum sed, expedita corporis et ea atque commodi. Aperiam explicabo cupiditate quae dolorem nesciunt?</p>
+          </div>
+          <div class="col-md-4 abh">
+            <h3>Accounting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos repellendus minima facilis libero sunt ab ipsum sed, expedita corporis et ea atque commodi. Aperiam explicabo cupiditate quae dolorem nesciunt?</p>
+          </div>
+         </div>
+         <div class="rbtn">
+          <button class="btn-primary">Read More</button>
+         </div>
+        </div>
+       </section>
+       <section id="services">
+         <div class="container ser">
+           <h3 class="thead">Services</h3>
+        <div class="bser">
+            <div class="col-lg-4 col-md-6 sert">
+                <div class="box">
+                 <div class="ser-icon">
+                   <i class="fa fa-4x fa-music"></i>
+                 </div>
+                 <div class="sercon">
+                   <span class="serhead">Creative Design</span>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi .</p>
+                 </div>
+                </div>
+              </div>
+            <div class="col-lg-4 col-md-6 sert">
+              <div class="box">
+               <div class="ser-icon">
+                 <i class="fa fa-4x fa-magic"></i>
+               </div>
+               <div class="sercon">
+                 <span class="serhead">Branding</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi delectui.</p>
+               </div>
+              </div>
+             </div>
+             <div class="col-lg-4 col-md-6 sert">
+               <div class="box">
+                 <div class="ser-icon">
+                   <i class="fa fa-4x fa-book"></i>
+                 </div>
+                 <div class="sercon">
+                   <span class="serhead">Accounting</span>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="col-lg-4 col-md-6 sert">
+              <div class="box">
+               <div class="ser-icon">
+                 <i class="fa fa-4x fa-music"></i>
+               </div>
+               <div class="sercon">
+                 <span class="serhead">Balance Sheet</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi delectus.</p>
+               </div>
+              </div>
+             </div>
+             <div class="col-lg-4 col-md-6 sert">
+              <div class="box">
+               <div class="ser-icon">
+                 <i class="fa fa-4x fa-magic"></i>
+               </div>
+               <div class="sercon">
+                 <span class="serhead">Marketing</span>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi delectus .</p>
+               </div>
+              </div>
+             </div>
+             <div class="col-lg-4 col-md-6 sert">
+              <div class="box">
+                  <div class="ser-icon">
+                     <i class="fa fa-4x fa-book"></i>
+                  </div>
+                  <div class="sercon">
+                     <span class="serhead">Advertising</span>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam modi dolorum vero veritatis voluptas culpa! Sequi delectus.</p>
+                   </div>
+              </div>
+             </div>
+            </div>
+          </div>
+       </section>
+       <section id="team">
+         <div class="container">
+           <h2 class="thead">Our Team</h2>
+           <div class="te-info">
+             <div class="te-img">
+               <div class="t-img">
+                 <button class="invis" id="img01"></button>
+                 <img src="assets/images/tm1.jpeg" alt="">
+               </div>
+               <div class="t-img">
+                  <button class="invis" id="img02"></button>
+                <img src="assets/images/tm2.jpg" alt="">
+              </div>
+              <div class="t-img">
+                  <button class="invis" id="img03"></button>
+                <img src="assets/images/tm3.jpg" alt="">
+              </div>
+              <div class="t-img">
+                  <button class="invis" id="img04"></button>
+                <img src="assets/images/tm4.jpg" alt="">
+              </div>
+             </div>
+             <div class="te-detail">
+               <div class="te-dshow">
+                  <div id="tdimg" >
+                    <img src="assets/images/tm11.jpeg" alt="">
+                  </div>
+                  <div class="details">
+                    <div id="name">Lucas Jimenez</div>
+                    <div id="design">Chairman</div>
+                    <div class="con">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In excepturi accusantium magnam fugiat molestiae dolores voluptas architecto tempore deserunt officia omnis deleniti possimus recusandae facere eos maiores ut, totam voluptatum!</p>
+                    </div>
+                    <div class="social">
+                      <div class="sm fb">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
+                      <div class="sm tw">
+                        <i class="fab fa-twitter"></i>
+                      </div>
+                      <div class="sm gp">
+                        <i class="fab fa-google-plus"></i>
+                      </div>
+                      <div class="sm wifi">
+                        <i class="fas fa-wifi"></i>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <section id="portfolio">
+         <h2 class="thead">Our Portfolio</h2>
+         <div class="container aimg">
+           <div class="pimg">
+             <img src="assets/images/g1.jpg" alt="">
+             <div class="anim">
+               <p>Maven</p>
+             </div>
+           </div>
+           <div class="pimg">
+            <img src="assets/images/g2.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g3.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g4.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g5.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g6.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g7.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+            <img src="assets/images/g8.jpg" alt="">
+            <div class="anim">
+              <p>Maven</p>
+            </div>
+          </div>
+          <div class="pimg">
+              <img src="assets/images/g1.jpg" alt="">
+              <div class="anim">
+                <p>Maven</p>
+              </div>
+            </div>
+            <div class="pimg">
+              <img src="assets/images/g2.jpg" alt="">
+              <div class="anim">
+                <p>Maven</p>
+              </div>
+            </div>
+            <div class="pimg">
+              <img src="assets/images/g3.jpg" alt="">
+              <div class="anim">
+                <p>Maven</p>
+              </div>
+            </div>
+            <div class="pimg">
+              <img src="assets/images/g4.jpg" alt="">
+              <div class="anim">
+                <p>Maven</p>
+              </div>
+            </div>
+        </div>
+       </section>
+       <section id="testimonials">
+         <h2 class="thead">Testimonials</h2>
+          <div class="tcontent">
+              <div id="tbimg">
+                <img src="assets/images/test.jpeg" alt="">
+              </div>
+              <div id="tcarousel">
+                 <div class="head">
+                   <h3>What people say</h3>
+                 </div>
+                 <div class="tslideshow" >
+                  <div class="tslide">
+                      <div class="tog">
+                          <div class="t-say">
+                                  <div class="tperson">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nam dolor animi, inventore possimus necessitatibus nulla sunt, nobis nostrum rem .</p>
+                              <h5 class="tname">Andrew</h5>
+                              </div>
+                              <div class="tface">
+                                <img src="assets/images/test2.jpeg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tslide">
+                      <div class="tog">
+                          <div class="t-say">
+                                  <div class="tperson">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nam dolor animi, inventore possimus necessitatibus nulla sunt, nobis nostrum re.</p>
+                          <h5 class="tname">Jack</h5>
+                          </div>
+                          <div class="tface">
+                              <img src="assets/images/test1.jpeg" alt="">
+                          </div>
+                           </div>
+                     </div>
+                   </div>
+               </div>
+              </div>
+          </div>
+       </section>
+       
+    </div>
+     
+</body>
+</html>
